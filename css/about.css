@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -29,9 +30,11 @@ nav {
 }
 .about-more p {
   font-size: 20px;
+  line-height: 1.3em;
 }
 .about-more h1 {
   color: rgb(3, 3, 3);
+  text-transform: uppercase;
 }
 .about-more .about-more-left {
   flex: 2;
@@ -41,7 +44,7 @@ nav {
   align-items: center;
   align-items: self-start;
   justify-content: space-evenly;
-  gap: 30px;
+  gap: 10px;
 }
 .about-more .about-more-left h1 {
   font-size: xx-large;
