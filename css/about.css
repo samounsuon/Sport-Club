@@ -84,8 +84,74 @@ nav {
   height: 300px;
 }
 
+@media (max-width: 768px) {
+  .about-more {
+    display: flex;
+    padding: 0px 30px;
+  }
+  .about-more p {
+    font-size: 14px;
+    line-height: 1.3em;
+  }
+  .about-more .about-more-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: self-start;
+    justify-content: space-evenly;
+  }
+  .about-more .about-more-left .about-content-head h1 {
+    font-size: 25px;
+    color: rgb(3, 3, 3);
+    text-transform: uppercase;
+  }
+  .about-more .about-more-left .about-content {
+    display: flex;
+    align-items: center;
+  }
+  .about-more .about-more-left .about-content h1 {
+    font-size: 25px;
+    color: rgb(3, 3, 3);
+    text-transform: uppercase;
+  }
+  .about-more .about-more-left .about-content span {
+    margin-left: 10px;
+    background-color: #000000;
+    padding: 5px 10px;
+  }
+  .about-more .about-more-left .about-content span a {
+    color: white;
+    text-decoration: none;
+  }
+  .about-more .about-more-left .about-content-center {
+    width: 95%;
+  }
+  .about-more .about-more-left .btn {
+    background-color: #CFA344;
+    padding: 10px 40px;
+    color: white;
+  }
+  .about-more .about-more-right .about-more-right-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+  .about-more .about-more-right img {
+    width: 150px;
+    height: 200px;
+  }
+  .about-more .about-more-right #about-img {
+    height: 200px;
+  }
+  .about-more .about-more-right #about-small-img {
+    position: relative;
+    top: 100px;
+  }
+}
 .knowleged {
-  flex: 1;
   padding: 0px 30px;
   display: flex;
   flex-direction: column;
@@ -128,6 +194,51 @@ nav {
   width: 125px;
 }
 
+@media (max-width: 768px) {
+  .knowleged {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .knowleged h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .knowleged .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .knowleged .icon .knowlgeded-icon {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+  }
+  .knowleged .icon .knowlgeded-icon .knowlgeded-icon-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F4F1;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+  }
+  .knowleged .icon .knowlgeded-icon .knowlgeded-icon-img img {
+    width: 100px;
+  }
+  .knowleged .icon .knowlgeded-icon .knowlgeded-icon-img #imgwidth {
+    width: 125px;
+  }
+}
 #blog {
   border-left: 5px solid;
   padding-left: 10px;
