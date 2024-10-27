@@ -20,7 +20,7 @@ nav {
 
 .background {
   height: 100vh;
-  background: url(../../image/about/baground-about.png);
+  background: url(../../image/about/athletes-1867185_1280.jpg);
   background-size: cover;
 }
 
@@ -55,9 +55,12 @@ nav {
 }
 .about-more .about-more-left .about-content span {
   margin-left: 10px;
-  color: white;
   background-color: #000000;
   padding: 5px 10px;
+}
+.about-more .about-more-left .about-content span a {
+  color: white;
+  text-decoration: none;
 }
 .about-more .about-more-left .about-content-center {
   width: 95%;
@@ -82,6 +85,7 @@ nav {
 }
 
 .knowleged {
+  flex: 1;
   padding: 0px 30px;
   display: flex;
   flex-direction: column;
@@ -89,6 +93,9 @@ nav {
   align-items: center;
   gap: 50px;
   text-align: center;
+}
+.knowleged h1 {
+  text-transform: uppercase;
 }
 .knowleged .icon {
   display: flex;
@@ -133,6 +140,9 @@ nav {
   display: flex;
   flex-direction: column;
 }
+.our-blog p {
+  line-height: 1.3em;
+}
 .our-blog .group-blog {
   display: flex;
   justify-content: space-between;
@@ -154,6 +164,11 @@ nav {
 .our-blog .group-blog .our-blog-left .our-blog-content h3 {
   font-size: 25px;
 }
+.our-blog .group-blog .our-blog-left .our-blog-content .group-bloge-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .our-blog .group-blog .our-blog-left .our-blog-content .group-bloge-content p {
   font-size: 15px;
 }
@@ -172,11 +187,15 @@ main {
   flex-direction: column;
 }
 main .value {
+  flex: 1;
   gap: 20px;
   padding: 0px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+main .value h1 {
+  text-transform: uppercase;
 }
 main .value .card-value {
   display: flex;
@@ -200,6 +219,19 @@ main .value .card-value .card img {
 }
 
 footer {
-  grid-area: "footer";
-  background-color: red;
+  padding: 20px 50px;
+  background-color: #292928;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .footer h3 {
+  color: white;
+}
+footer .footer p {
+  color: rgb(121, 121, 121);
 }/*# sourceMappingURL=about.css.map */

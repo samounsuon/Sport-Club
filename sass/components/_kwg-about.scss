@@ -1,12 +1,16 @@
 .knowleged{
+    flex: 1;
     padding: 0px 30px;
     @include center-direction-column;
     gap: 50px;
     text-align: center;
+    h1{
+        text-transform: uppercase;
+    }
     .icon{
         @include center;
         justify-content: space-between; 
-        .knowlgeded-icon{   
+        .knowlgeded-icon{  
             gap: 30px;  
             @include center-direction-column;
             width: 30%;   

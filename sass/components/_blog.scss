@@ -7,8 +7,12 @@
     background-color: #EAF1F1;
     padding: 50px 50px ;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+
     // padding:  10px;
+    p{
+        line-height: 1.3em;
+    }
     .group-blog{
         display: flex;
         justify-content: space-between;
@@ -24,10 +28,14 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                // gap: 100px;
                 h3{
                     font-size: 25px;
                 }
                 .group-bloge-content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
                     p{
                         font-size: 15px;
                     }
