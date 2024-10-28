@@ -1,0 +1,14 @@
+@import"./mixins";
+@import"./main-bgk";
+@import "./more-about";
+@import "./kwg-about";
+@import"./blog";
+@import"./card";
+@import "./value";    
+main{
+    gap: 50px;      
+    display: flex;
+    flex-direction: column;
+    
+}
+
