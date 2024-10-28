@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-form{
+    height: 100vh;
+    background:url(../image/about/log\ in.avif);
+    // background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    form{
+        height: 60vh;
+        width: 60vh;
+        background: linear-gradient(#D2A28B,#7A5244,#300E09);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border-radius:5px;
+        box-shadow: #A96851 (0px 0px 2px 0px);
+        .from-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1{
+                text-align: center;
+            }
+            .input{
+                display: flex;
+                flex-direction: column;
+            }
+            input{
+                height: 30px;
+                background:none;
+                border: none;
+                border-bottom: solid 2px white;
+                color: white;
+            }
+            input:hover{
+                background-color: gainsboro;
+                
+            }
+            ::placeholder{
+                color: rgb(253, 253, 253);
+            
+            }
+            input:hover::placeholder{
+                color: gray;
+                padding-left: 10px;
+                
+            }
+            input:focus {
+                outline: none;  
+            }
+            .forget-password{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .group-between{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                }
+                a{
+                    color: white;
+                }
+            }
+            .btn-login{
+                button{
+                    height: 35px;
+                    width: 100%;
+                    border-radius: 25px;
+                    border: none;
+                    font-weight: bold;
+                }
+                button:hover{
+                    background-color: #da6014;
+                    color: white;
+                }
+            }
+            .register{
+                text-align: center;
+                a{
+                    color: white;
+                }
+            }
+        }
+        
+
+    }
+}
