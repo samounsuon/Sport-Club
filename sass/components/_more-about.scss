@@ -46,9 +46,8 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            gap: 10px;
-            // position: relative;
-            // top: 20%;
+            gap: 15px;
+
         }
         img{
             width: 200px;
@@ -62,19 +61,16 @@
 @media (max-width:768px){
     .about-more{
         display: flex;  
-        padding: 0px 30px;
+        // padding: 0px 30px;
         p{
             font-size: 14px;
             line-height: 1.3em;
         }
-        
         .about-more-left{
             flex: 2;
             @include center-direction-column;
             align-items: self-start;
-            justify-content: space-evenly;
-            // gap: 5px;
-            
+            justify-content: space-evenly;  
             .about-content-head{
             
                 h1{
@@ -99,7 +95,6 @@
                     padding: 5px 10px;
                     a{
                         color: white;
-                        // list-style: none;
                         text-decoration: none;
                     }
                 }
@@ -134,7 +129,7 @@
         }
     }
 }
-@media (max-width:600px){
+@media (max-width:420px){
     .about-more{
         flex-direction: column;
          // padding: 20px;
@@ -147,13 +142,11 @@
             }   
         }
         .about-more-right{
+            display: flex;
+            justify-content: center;
+    
             .about-more-right-img{
                 display: flex;
-                align-items: flex-end;
-                // justify-content: flex-end;
-                
-                gap: 5px;
-                
             }
             img{
                 width: 170px;
@@ -161,8 +154,6 @@
             }  
             #about-img{
                 height: 250px;
-                // position: relative;
-                // top: 100px ;
             }
             #about-small-img{
                 position: relative;

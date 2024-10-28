@@ -55,16 +55,7 @@
 }
 @media (max-width:768px){
     .our-blog{
-    //     background-color: #EAF1F1;
-    //     padding: 50px 50px ;
-    //     display: flex;
-        // flex-direction: row; 
-    
-        // padding:  10px;
-        // p{
-        //     line-height: 1.3em;
-        // }
-        .group-blog{
+        .group-blog{    
             flex-direction: column;
             gap: 50px;
           
@@ -83,13 +74,11 @@
                     }
                     a{
                         font-size: 10px;
-                        // color: re;
                     }
                     .group-bloge-content{
                         p{
                             font-size: 14px;
                         }
-                        
                     }
                 }
                 img{
@@ -105,9 +94,55 @@
                     border-left: solid 2px black;
                     padding-left: 100px;
                 }   
-                // justify-content: flex-end;
-                // align-items: flex-end;
             }
+        }
+    }
+}
+@media(max-width:420px){
+    .our-blog{
+        flex-direction: column;
+        .group-blog{
+            flex-direction: column;
+            .our-blog-left{
+                width: 100%;
+                gap: 10px;
+                align-items: center;    
+                flex-direction: column-reverse;
+                img{
+                    border: none;
+                }   
+                #img-blog{
+                    position: relative;
+                    left: 16%;
+                }
+                .our-blog-content{
+                    h3{
+                        font-size: 20px;
+                    }
+                    a{
+                        font-size: 10px;
+                    }
+                            // p{
+                            //     text-align: justify;
+                            // }
+                    .group-bloge-content{
+                       
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                img{
+                    height: 400px;
+                    width: 100% ;
+                }   
+            }
+            .our-blog-revers{
+                #img-revers{
+                   border: none;
+                    
+                }   
+            }   
         }
     }
 }
