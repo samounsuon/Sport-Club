@@ -3,37 +3,13 @@
 @import "./more-about";
 @import "./kwg-about";
 @import"./blog";
-@import"./card";    
+@import"./card";
+@import "./value";    
 main{
     gap: 50px;  
     display: flex;
     flex-direction: column;
-
-    .value{
-        flex: 1;
-        h1{
-            text-transform: uppercase;
-        }
-        gap: 20px;
-        padding: 0px 50px 50px 50px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        .card-value{
-            display: flex;
-            justify-content: space-around;
-            .card{
-                @include card;
-                @include center;
-                flex-direction: column;
-                gap: 20px;
-                
-                img{
-                    width: 100px;
-
-                }
-            }
-
-        }
-    }
+    
+    
+    
 }

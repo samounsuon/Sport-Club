@@ -9,7 +9,6 @@ h1 {
 }
 
 body {
-  height: 100vh;
   grid-template-rows: 1fr 10fr 4fr;
 }
 
@@ -19,6 +18,14 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .background {
+    width: 100%;
+    height: 100vh;
+    background: url(../../image/about/athletes-1867185_1280.jpg);
+    background-size: cover;
+  }
+}
 .about-more {
   display: flex;
   padding: 0px 30px;
@@ -144,6 +151,33 @@ body {
   .about-more .about-more-right #about-small-img {
     position: relative;
     top: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .about-more {
+    flex-direction: column;
+  }
+  .about-more p {
+    text-align: justify;
+  }
+  .about-more .about-more-left .btn {
+    display: none;
+  }
+  .about-more .about-more-right .about-more-right-img {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+  }
+  .about-more .about-more-right img {
+    width: 170px;
+    height: 200px;
+  }
+  .about-more .about-more-right #about-img {
+    height: 250px;
+  }
+  .about-more .about-more-right #about-small-img {
+    position: relative;
+    top: 0px;
   }
 }
 .knowleged {
@@ -330,12 +364,7 @@ body {
     padding-left: 100px;
   }
 }
-main {
-  gap: 50px;
-  display: flex;
-  flex-direction: column;
-}
-main .value {
+.value {
   flex: 1;
   gap: 20px;
   padding: 0px 50px 50px 50px;
@@ -343,14 +372,14 @@ main .value {
   flex-direction: column;
   text-align: center;
 }
-main .value h1 {
+.value h1 {
   text-transform: uppercase;
 }
-main .value .card-value {
+.value .card-value {
   display: flex;
   justify-content: space-around;
 }
-main .value .card-value .card {
+.value .card-value .card {
   width: 300px;
   height: 300px;
   background-color: #F9F4F1;
@@ -363,8 +392,27 @@ main .value .card-value .card {
   flex-direction: column;
   gap: 20px;
 }
-main .value .card-value .card img {
+.value .card-value .card img {
   width: 100px;
+}
+
+@media (max-width: 768px) {
+  .value .card-value .card {
+    width: 200px;
+    height: 250px;
+    background-color: #F9F4F1;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    padding: 0px 20px;
+  }
+  .value .content p {
+    font-size: 10px;
+  }
+}
+main {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -385,6 +433,11 @@ footer .footer p {
   color: rgb(121, 121, 121);
 }
 
+@media (max-width: 768px) {
+  footer p {
+    font-size: 10px;
+  }
+}
 nav {
   display: flex;
   flex-direction: column;

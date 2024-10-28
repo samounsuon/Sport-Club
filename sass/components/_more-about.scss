@@ -134,3 +134,41 @@
         }
     }
 }
+@media (max-width:600px){
+    .about-more{
+        flex-direction: column;
+         // padding: 20px;
+        p{
+             text-align: justify;
+         }
+        .about-more-left{
+            .btn{
+                 display: none;
+            }   
+        }
+        .about-more-right{
+            .about-more-right-img{
+                display: flex;
+                align-items: flex-end;
+                // justify-content: flex-end;
+                
+                gap: 5px;
+                
+            }
+            img{
+                width: 170px;
+                height: 200px;
+            }  
+            #about-img{
+                height: 250px;
+                // position: relative;
+                // top: 100px ;
+            }
+            #about-small-img{
+                position: relative;
+                top: 0px;
+               
+            }
+        }
+    } 
+ }
