@@ -21,12 +21,12 @@
             line-height: 1.5em;
         }
         button{
-            background: $all-color;
-            color: white;
-            padding: 15px 20px;
+            @include button-style;
             margin: 10px 0 0 50px;
-            font: bold 15px sans-serif;
-            border: none;
+           
+        }
+        button:hover{
+            @include hover-button-style;
         }
     }
     .interface-right{
@@ -55,13 +55,18 @@
             }
             p{
                 color: white;
-                padding: 0px 10px 10px 50px;
+                padding: 0px 10px 10px 40px;
                 font-family: sans-serif;
                 line-height: 1.3em;
                 width: 70%;
             }
             button{
                 background: $all-color;
+                color: white;
+                padding: 15px 20px;
+                margin: 10px 0 0 40px;
+                font: bold 14px sans-serif;
+                border: none;
             }
         }
         .interface-right{
@@ -82,19 +87,20 @@
             h1{
                 color: white;
                 font: 30px sans-serif;
-                padding: 40px 10px 10px 40px;
+                padding: 30px 10px 10px 30px;
                 line-height: 1.2em;
                 width: 80%;
             }
             p{
                 color: white;
-                padding: 0px 10px 10px 50px;
-                font-family: sans-serif;
+                padding: 0px 10px 10px 30px;
+                font-family: 20px sans-serif;
                 line-height: 1.3em;
                 width: 80%;
             }
             button{
-                background: $all-color;
+                margin: 10px 0 0 30px;
+                padding: 15px 20px;
             }
         }
         .interface-right{
@@ -112,24 +118,21 @@
             height: 82vh;
             h1{
                 color: white;
-                font: 20px sans-serif;
+                font: 22px sans-serif;
                 padding: 20px 8px 8px 20px;
                 line-height: 1.2em;
-                width: 100%;
+                width: 90%;
             }
             p{
                 color: white;
                 padding: 0px 10px 10px 20px;
-                font-family: sans-serif;
+                font-family: 18px sans-serif;
                 line-height: 1.3em;
             }
             button{
-                background: $all-color;
-            }
-        }
-        .interface-right{
-            img{
-                width: 40%;
+                padding: 15px 20px;
+                margin: 10px 0 0 20px;
+                font: bold 12px sans-serif;
             }
         }
     }
@@ -143,10 +146,10 @@
             height: 82vh;
             h1{
                 color: white;
-                font: 15px sans-serif;
-                padding: 40px 20px 10px 20px;
+                font: 18px sans-serif;
+                padding: 20px 20px 10px 20px;
                 line-height: 1.2em;
-                width: 100%;
+                width: 90%;
             }
             p{
                 color: white;

@@ -1,0 +1,98 @@
+.what-are-they{
+    display: flex;
+    margin-top: 50px;
+    height: 100vh;
+    .what-are-they-left{
+        width: 60%;
+        @include display-column(start,start);
+        .what-are-they-content{
+            @include display-column(start,start);
+            height: 100%;
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                height: 60%;
+                h1{
+                    font:100 35px sans-serif;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    span{
+                        color: $all-color;
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    font: 100 25px sans-serif;
+                    color: $all-color;
+                    padding-right: 25px;
+                    line-height: 1.3em;
+                }
+                button:not(.btn button){
+                    @include button-style;
+                    width: fit-content;
+                    border-bottom: 1px solid transparent;
+
+                }
+                button:not(.btn button):hover{
+                    @include hover-button-style;
+                }
+                
+
+                
+            }
+            .about-sport{
+                @include display-column(center, center);
+                height: 40%;
+                p:not(.about-sport-right p){
+                    font: 100 20px sans-serif;
+                    
+                    text-transform: uppercase;
+                    padding-bottom: 25px;
+                    text-decoration: underline;
+                    
+                }
+                .review{
+                    @include display-row(start, start);
+                    .about-sport-left{
+                        @include display-row(center, space-between);
+                        width: 50%;
+                        height: 100%;
+                        padding-right: 25px;
+                        img{
+                            width: 30%;
+                        }
+                        .value{
+                            @include display-column(center,space-between);
+                            height: 100%;
+                            h2{
+                                text-transform: uppercase;
+                            }
+                        }
+                        
+                    }
+                    .about-sport-right{
+                        width: 50%;
+                        // background: green;
+                        border-left: 1px solid #000;
+                        p{
+                            font: 100 16px sans-serif;
+                            color: $all-color;
+                            padding: 0px 25px;
+                            line-height: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .what-are-they-right{
+        width: 40%;
+        padding: 50px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background: #f7f4f4;
+        img{
+            width: 100%;
+        }
+    }
+}
