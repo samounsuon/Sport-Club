@@ -245,7 +245,7 @@ main{
     }
 
     body{
-        height: 690vh;
+        height: 300vh;
         width: 100%;
     }
     .but{
@@ -258,7 +258,7 @@ main{
         }
     }
     footer{
-        height: 190vh;
+        height: 100vh;
         margin-top: 120%;
         .footertop{
             height: 100vh;
@@ -275,6 +275,7 @@ main{
     .footerbottom{
         height: 110vh;
         width: 100%;
+        background-color: chartreuse;
         .texts{
             margin-top: 10px;
             .text{
@@ -314,6 +315,155 @@ main{
                 #location{
                     font-size: 50px;
                     margin-left: 70px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:420px){
+    body{
+        height: 500vh;
+        width: 100%;
+    }
+    nav{
+        .nav-top{
+            display: none;
+            .nav-top-left{
+                display: none;
+            }
+            .nav-top-right{
+                p{
+                    display: none;
+                }
+            }
+        }
+        .nav-button{
+            .nav-button-left{
+                img{
+                    width: 50px;
+                }
+                h1{
+                    font-size: 14px;
+                }
+            }
+        }
+            .nav-button-right{
+                @include display-row;
+                gap: 20px;
+                padding: 0px;
+    
+                ul{
+                    display: flex;
+                    gap: 100px;
+                    li{
+                        list-style: none;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: 30px;
+                            font-family: sans-serif;
+                            font-weight: 300;
+                          }
+                        }
+                }
+            }
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-header{
+        font-size: 10px;
+        button{
+            width: 100px;
+            border-radius: 5px;
+            span{
+            font-size: 15px;}
+        }
+        
+    }
+    .main-head{
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 8px;
+            margin-top: 0px;
+        }
+    }
+    .container{
+        width: 96%;
+        margin-left: 25px;
+
+
+    }.main-right{
+        height: 95vh;
+        .container{
+            margin-top: 5%;
+            height: 90vh;
+            width: 95%;
+            margin-left: 0px;
+            .form-header{
+                color:rgb(0, 0, 0) ;
+                padding: 20px;
+            }
+            form{
+                padding: 10px;
+                gap: 5px;
+                height: 65vh;
+            }
+        }
+    }
+    .but{
+        display: flex;
+        justify-content: center;
+        #submit{
+            font-size: 14px;
+            border-radius: 20px;
+            width: 30%;
+            height: 7vh;
+        }
+    }
+    footer{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200%;
+        .footertop{
+            height: 30vh;
+            width: 92%;
+            margin-left: 30px;
+            iframe{
+                width: 92%;
+                height: 92vh;
+            }
+        }
+        #text-bottom{
+            margin-left: 35%;
+            margin-top: 40px;
+            color: rgb(152, 152, 152);
+        }
+    }
+    .footerbottom{
+        height: 100vh;
+        width: 100%;
+        margin-top: 0px;
+        .texts{
+            margin-top: 10px;
+            .text{
+                color: rgb(175, 175, 175);
+                padding: 0 10px 0 10px;
+                
+                .tillte{
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: white;
+                }
+                p{
+                    font-size: 15px;
+                    padding: 10px 0 10px 0;
+                    
                 }
             }
         }
