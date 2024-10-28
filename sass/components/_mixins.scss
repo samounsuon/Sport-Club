@@ -14,9 +14,22 @@
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
+@mixin display-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin display-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+=======
 @mixin btn {
     background-color: #CFA344;
     padding: 10px 40px;
     color: white;
 
 }
+>>>>>>> ce1c77005048c0e718d4175fa5cd57b6c79f7e22
