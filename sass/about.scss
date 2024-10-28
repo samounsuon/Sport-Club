@@ -15,3 +15,14 @@ body{
 @import "./components/nav-about";
 @import "./components/main-about";
 @import "./components/footer-about";
+
+
+
+@import "../scss/./components/./variable";
+@import "../sass/components/mixins";
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+@import "../sass/components/navbar";
