@@ -30,6 +30,25 @@
   flex-direction: column;
   gap: 20px;
 }
+.main-form form .from-content .button {
+  display: flex;
+}
+.main-form form .from-content .button .btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 10px;
+}
+.main-form form .from-content .button #btn {
+  background-color: #DF6A4C;
+}
+.main-form form .from-content .button .btn:hover {
+  background-color: #7A5244;
+}
+.main-form form .from-content .button #btn:hover {
+  background-color: #7A5244;
+}
 .main-form form .from-content h1 {
   text-align: center;
 }
