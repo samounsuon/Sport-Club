@@ -1,17 +1,29 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 h1{
   font-size: xx-large;  
 }
 body{
-    height: 100vh;
-    
-    grid-template-rows: 1fr 10fr 4fr;
-
+  height: 100vh;
+  
+  grid-template-rows: 1fr 10fr 4fr;
+  
 }
 @import "./components/nav-about";
 @import "./components/main-about";
 @import "./components/footer-about";
+
+@import "../scss/components/variable";
+@import "../scss/components/mixin";
+@import "../scss/components/navbar";
+
+
+// *{
+//   margin: 0;
+//   padding: 0;
+  
+// }
+// @import "../sass/components/navbar";
