@@ -1,0 +1,167 @@
+
+.interface{
+    @include display-row(start,start);
+    height: 82vh;
+    background: url(../../image/home/home_interface.png) center / cover no-repeat;
+    .interface-left{
+        @include display-column(start,start);
+        flex: 1;
+        height: 82vh;
+        h1{
+            color: white;
+            font: 40px sans-serif;
+            padding: 50px 10px 10px 50px;
+            line-height: 1.3em;
+            width: 60%;
+        }
+        p{
+            color: white;
+            padding: 0px 10px 10px 50px;
+            font-family: sans-serif;
+            line-height: 1.5em;
+        }
+        button{
+            background: $all-color;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 0 0 50px;
+            font: bold 15px sans-serif;
+            border: none;
+        }
+    }
+    .interface-right{
+        flex: 1;
+        height: 82vh;
+        @include display-row(center,center);
+        img{
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 885px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            flex: 1;
+            height: 82vh;
+            h1{
+                color: white;
+                font: 35px sans-serif;
+                padding: 40px 10px 10px 40px;
+                line-height: 1.2em;
+                width: 70%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 50px;
+                font-family: sans-serif;
+                line-height: 1.3em;
+                width: 70%;
+            }
+            button{
+                background: $all-color;
+            }
+        }
+        .interface-right{
+            display: none;
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            flex: 6;
+            height: 82vh;
+            h1{
+                color: white;
+                font: 30px sans-serif;
+                padding: 40px 10px 10px 40px;
+                line-height: 1.2em;
+                width: 80%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 50px;
+                font-family: sans-serif;
+                line-height: 1.3em;
+                width: 80%;
+            }
+            button{
+                background: $all-color;
+            }
+        }
+        .interface-right{
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            height: 82vh;
+            h1{
+                color: white;
+                font: 20px sans-serif;
+                padding: 20px 8px 8px 20px;
+                line-height: 1.2em;
+                width: 100%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 50px;
+                font-family: sans-serif;
+                line-height: 1.3em;
+            }
+            button{
+                background: $all-color;
+            }
+        }
+        .interface-right{
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            flex: 8;
+            height: 82vh;
+            h1{
+                color: white;
+                font: 30px sans-serif;
+                padding: 40px 10px 10px 40px;
+                line-height: 1.2em;
+                width: 100%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 50px;
+                font-family: sans-serif;
+                line-height: 1.3em;
+            }
+            button{
+                background: $all-color;
+            }
+        }
+        .interface-right{
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
