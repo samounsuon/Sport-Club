@@ -1,5 +1,5 @@
 .btn{
-    @include display-row(center,center)
+    @include display-row(center,center);
     button{
         clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 6% 49%, 0% 0%);
         padding: 15px 100px;
