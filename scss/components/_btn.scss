@@ -1,12 +1,17 @@
 .btn{
     @include display-row(center,center);
+    width: 100%;
+    height: fit-content;
     button{
-        clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 6% 49%, 0% 0%);
         padding: 15px 100px;
-        font: 100 30px sans-serif;
+        font: 100 $button-big-font-size sans-serif;
         background: $all-color;
         color: white;
         border: none;
-       
+        width: 100%;
+    }
+    button:hover{
+        text-decoration: underline;
+        color: yellow;
     }
 }
