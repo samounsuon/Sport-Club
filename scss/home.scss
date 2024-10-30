@@ -3,6 +3,18 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
+body {
+    font-size: calc(0.75em + 1vmin);
+  }
 @import "../scss/./components/./navbar";
+@import "../scss/./components/./home_interface";
+@import "../scss/./components/./new-articles";
+@import "../scss/./components/./what-we-do";
+@import "../scss/./components/./be-member";
+@import "../scss/./components/./sport-evert";
+@import "../scss/./components/./what-are-they";
+@import "../scss/./components/./btn";
+@import "../scss/./components/./activity";
+@import "../scss/./components/./rugby";
+@import "../scss/./components/./list-sport";

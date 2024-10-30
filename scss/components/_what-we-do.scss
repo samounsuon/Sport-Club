@@ -1,0 +1,75 @@
+.what-we-do{
+    @include display-column(center,space-around);
+    background: url(../../image/home/Bg_what_we_do.png) center / cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    .what-we-do-head{
+        @include display-column(center,center);
+        gap: 10px;
+        h1{
+            border-bottom: 1px solid transparent;
+            font: 100 $all-big-h1 sans-serif;
+            color: yellow;
+        }
+        h1:hover{
+            border-bottom: 1px solid yellow;
+            cursor: pointer;
+        }
+        p{
+            font: 100 $all-small-p sans-serif;
+            line-height: $all-small-p;
+            letter-spacing: 1px;
+            line-height: $line-height;
+            width: 80%;
+        }
+    }
+    .what-we-do-content{
+        padding: 50px;
+        .what-we-do-content-items{
+            @include display-row(center,space-evenly);
+            gap: 10px;
+            height: 30vh;
+            // background: #000;
+            .content-item{
+                @include display-row(center,center);
+                background: #00000038;
+                padding: 0px 10px;
+                border-radius: 10px;
+                height: 100%;
+                .content-item-pic{
+                    img{
+                        width: 8vw;
+                        background: rgba(255, 255, 0, 0.733);
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                        border-radius: 10px;
+                    }
+                }
+                .content-item-text{
+                    @include display-column(start,center);
+                    text-align: left;
+                    padding: 25px;
+                    gap: 5px;
+                    h2{
+                        font: 100 1.3vw sans-serif;
+                        text-transform: uppercase;
+                        color: yellow;
+                        letter-spacing: 0.5px;
+                        border-bottom: 1px solid transparent;
+                    }
+                    h2:hover{
+                        border-bottom: 1px solid yellow;
+                        cursor: pointer;
+                    }
+                    p{
+                        font: 1 1vw sans-serif;
+                        line-height: $line-height;
+                        letter-spacing: 0.8px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

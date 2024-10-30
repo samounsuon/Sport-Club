@@ -1,0 +1,63 @@
+.sport-evert{
+    display: flex;
+    height: 100vh;
+    margin-top: 50px;
+    .sport-evert-left{
+        width: 60%;
+        h1{
+            font: 100 $all-big-h1 sans-serif;
+            text-transform: uppercase;
+            text-decoration: underline;
+            line-height: $line-height;
+            padding-bottom: 15px;
+            >span{
+                text-decoration: underline;
+                text-transform: uppercase;
+                color: $all-color;
+                font: 300 $all-big-h1;
+            }
+        }
+        p{
+            color: $all-color;
+            font: 100 $all-big-p sans-serif;
+            line-height: 1.5em;
+            padding-right: 25px;
+        }
+        
+        .icon-sport-evert{
+            @include button-style;
+            width: fit-content;
+            margin-top: 15px;
+            border-bottom: 1px solid transparent;
+        }
+        .icon-sport-evert:hover{
+            @include hover-button-style;
+        }
+        button{
+            background: $all-color;
+            position: relative;
+            left: 65%;
+            top: 10%;
+            clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 6% 49%, 0% 0%);
+            padding: 15px 100px;
+            font: 100 $button-big-font-size sans-serif;
+            color: white;
+            border: none;
+            
+        }
+        button:hover{
+            text-decoration: underline;
+            color: yellow;
+        }
+    }
+    .sport-evert-right{
+        background: #f7f4f4;
+        width: 40%;
+        margin-left: 20px;
+        padding: 50px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        img{
+            width: 100%;
+        }
+    }
+}

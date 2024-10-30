@@ -1,0 +1,17 @@
+.btn{
+    @include display-row(center,center);
+    width: 100%;
+    height: fit-content;
+    button{
+        padding: 15px 100px;
+        font: 100 $button-big-font-size sans-serif;
+        background: $all-color;
+        color: white;
+        border: none;
+        width: 100%;
+    }
+    button:hover{
+        text-decoration: underline;
+        color: yellow;
+    }
+}
