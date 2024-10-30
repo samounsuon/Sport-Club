@@ -10,7 +10,7 @@
         gap: 10px;
         h1{
             border-bottom: 1px solid transparent;
-            font: 100 35px sans-serif;
+            font: 100 $all-big-h1 sans-serif;
             color: yellow;
         }
         h1:hover{
@@ -18,9 +18,10 @@
             cursor: pointer;
         }
         p{
-            font: 100 16px sans-serif;
-            line-height: 1.3em;
+            font: 100 $all-small-p sans-serif;
+            line-height: $all-small-p;
             letter-spacing: 1px;
+            line-height: $line-height;
             width: 80%;
         }
     }
@@ -29,16 +30,17 @@
         .what-we-do-content-items{
             @include display-row(center,space-evenly);
             gap: 10px;
-            height: 150px;
+            height: 30vh;
+            // background: #000;
             .content-item{
                 @include display-row(center,center);
                 background: #00000038;
                 padding: 0px 10px;
                 border-radius: 10px;
+                height: 100%;
                 .content-item-pic{
-                    height: 100%;
                     img{
-                        width: 100px;
+                        width: 8vw;
                         background: rgba(255, 255, 0, 0.733);
                         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
                         border-radius: 10px;
@@ -50,7 +52,7 @@
                     padding: 25px;
                     gap: 5px;
                     h2{
-                        font: 100 18px sans-serif;
+                        font: 100 1.3vw sans-serif;
                         text-transform: uppercase;
                         color: yellow;
                         letter-spacing: 0.5px;
@@ -61,9 +63,9 @@
                         cursor: pointer;
                     }
                     p{
-                        font: 100 11px sans-serif;
-                        line-height: 1.5em;
-                        letter-spacing: 0.8px
+                        font: 1 1vw sans-serif;
+                        line-height: $line-height;
+                        letter-spacing: 0.8px;
                     }
                 }
                 

@@ -1,0 +1,49 @@
+.rugby{
+    display: flex;
+    height: fit-content;
+    padding: 50px;
+    .rugby-left{
+        flex: 1;
+        padding-right: 25px;
+        @include display-column (start,space-between);
+        .rugby-content{
+            h1{
+                font:100 2.5vw sans-serif;
+                border-bottom: 3px solid #000;
+            }
+            p{
+                font: 100 1.9vw sans-serif;
+                line-height: 1.5em;
+                padding-right: 25px;
+                margin-top: 10px;
+                color: $all-color;
+                q{
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: black
+                }
+            }
+            button{
+                @include button-style;
+                margin-top: 50px;
+                font-size: 1.9vw;
+            }
+            button:hover{
+                @include hover-button-style;
+            }
+        }
+    }
+    .rugby-right{
+        flex: 1;
+        img{
+            width: 100%;
+        }
+        img:last-child{
+            position: relative;
+            top: -20%;
+            right: 20%;
+            width: 60%;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,26 +1,25 @@
 .sport-evert{
     display: flex;
-    font-family: sans-serif;
-    height: 120vh;
+    height: 100vh;
     margin-top: 50px;
     .sport-evert-left{
         width: 60%;
         h1{
-            font-size: 100 35px;
+            font: 100 $all-big-h1 sans-serif;
             text-transform: uppercase;
             text-decoration: underline;
-            line-height: 1.3em;
+            line-height: $line-height;
             padding-bottom: 15px;
             >span{
                 text-decoration: underline;
                 text-transform: uppercase;
                 color: $all-color;
-                font: 300 35px;
+                font: 300 $all-big-h1;
             }
         }
         p{
             color: $all-color;
-            font: 100 25px sans-serif;
+            font: 100 $all-big-p sans-serif;
             line-height: 1.5em;
             padding-right: 25px;
         }
@@ -38,10 +37,10 @@
             background: $all-color;
             position: relative;
             left: 65%;
-            top: 20%;
+            top: 10%;
             clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 6% 49%, 0% 0%);
             padding: 15px 100px;
-            font: 100 30px sans-serif;
+            font: 100 $button-big-font-size sans-serif;
             color: white;
             border: none;
             
@@ -59,7 +58,6 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         img{
             width: 100%;
-           
         }
     }
 }

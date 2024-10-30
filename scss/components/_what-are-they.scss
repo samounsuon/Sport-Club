@@ -1,20 +1,20 @@
 .what-are-they{
     display: flex;
     margin-top: 50px;
-    height: 100vh;
+    height: fit-content;
     .what-are-they-left{
         width: 60%;
-        @include display-column(start,start);
+        height: fit-content;
         .what-are-they-content{
-            @include display-column(start,start);
-            height: 100%;
+            @include display-column(space-between,start);
+            gap: 50px;
             .content{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 height: 60%;
                 h1{
-                    font:100 35px sans-serif;
+                    font:100 $all-big-h1 sans-serif;
                     text-transform: uppercase;
                     text-decoration: underline;
                     span{
@@ -23,7 +23,7 @@
                     }
                 }
                 p{
-                    font: 100 25px sans-serif;
+                    font: 100 $all-big-p sans-serif;
                     color: $all-color;
                     padding-right: 25px;
                     line-height: 1.3em;
@@ -32,7 +32,7 @@
                     @include button-style;
                     width: fit-content;
                     border-bottom: 1px solid transparent;
-
+                    
                 }
                 button:not(.btn button):hover{
                     @include hover-button-style;
@@ -45,12 +45,12 @@
                 @include display-column(center, center);
                 height: 40%;
                 p:not(.about-sport-right p){
-                    font: 100 20px sans-serif;
-                    
+                    font: 100 $all-small-p sans-serif; 
                     text-transform: uppercase;
                     padding-bottom: 25px;
                     text-decoration: underline;
-                    
+                    letter-spacing: 1px;
+                    line-height: $line-height;
                 }
                 .review{
                     @include display-row(start, start);
@@ -63,10 +63,14 @@
                             width: 30%;
                         }
                         .value{
-                            @include display-column(center,space-between);
+                            @include display-column(center,start);
                             height: 100%;
                             h2{
+                                font-size: 1.8vw;
                                 text-transform: uppercase;
+                            }
+                            span{
+                                font-size: 1.2vw;
                             }
                         }
                         
@@ -76,7 +80,7 @@
                         // background: green;
                         border-left: 1px solid #000;
                         p{
-                            font: 100 16px sans-serif;
+                            font: 100 $all-small-p sans-serif;
                             color: $all-color;
                             padding: 0px 25px;
                             line-height: 1.3em;
