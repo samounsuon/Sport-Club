@@ -5,6 +5,9 @@
 @import"./blog";
 @import"./card";
 @import "./value";    
+@import "../../scss/components/variable";
+// 
+@import"./responsiv";
 main{
     gap: 50px;      
     display: flex;
