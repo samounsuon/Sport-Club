@@ -490,7 +490,7 @@ h1 {
     font-size: 0.875rem;
   }
 }
-@media (max-width: 40px) {
+@media (max-width: 480px) {
   .value .card-value {
     display: flex;
     flex-wrap: wrap;
