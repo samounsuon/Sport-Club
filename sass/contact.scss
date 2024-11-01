@@ -32,8 +32,10 @@ button span{
     font-size: 30px;
     font-weight: bold
 }
-
-@import"./components/navber";
+@import "../scss/components/mixin";
+@import "../scss/components/variable";
+@import "../scss/components/navbar";
+// @import"./components/navber";
 @import"./components/header";
 @import"./components/main";
 @import"./components/footer";

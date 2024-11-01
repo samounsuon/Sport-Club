@@ -125,12 +125,12 @@ main{
     }
     footer{
         height: 200vh;
-        margin-top: 100%;
+        margin-top: 20%;
         .footertop{
             height: 100vh;
             width: 10%;
             margin-top: 10px;
-            background-color: white;
+            background-color: rgb(247, 244, 244);
             margin-bottom: 15%;
             iframe{
                 width: 10%;
@@ -144,7 +144,7 @@ main{
         .texts{
             margin-top: 50px;
             .text{
-                color: white;
+                color: rgb(247, 244, 244);
                 padding: 0 60px 0 60px;
                 
                 .tillte{
