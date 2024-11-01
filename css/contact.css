@@ -5,8 +5,7 @@
 }
 
 body {
-  height: 480vh;
-  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -23,7 +22,7 @@ body {
   color: white;
 }
 
-button {
+#submit {
   background-color: rgba(255, 174, 0, 0.872);
   color: white;
   border: none;
@@ -32,15 +31,16 @@ button {
   margin-top: 40px;
 }
 
+#submit:hover {
+  background-color: rgb(116, 116, 116);
+}
+
 button span {
   font-size: 30px;
   font-weight: bold;
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -700,48 +700,26 @@ main .main-right {
   }
 }
 footer {
-  height: 190vh;
+  padding: 20px 50px;
+  background-color: #292928;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
-footer .footertop {
-  height: 80vh;
-  width: 92%;
-  margin-left: 30px;
-}
-footer .footertop iframe {
-  width: 100%;
-}
-footer .footerbottom {
-  height: 100vh;
-  width: 100%;
-  margin-top: 70px;
-  background-color: rgb(40, 40, 40);
-}
-footer .footerbottom .texts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.text {
+footer .footer h3 {
   color: white;
-  padding: 0 90px 0 90px;
 }
-.text .tillte {
-  font-weight: bold;
-  font-size: 28px;
+footer .footer a {
+  color: rgb(164, 164, 164);
+  text-decoration: none;
 }
-.text p {
-  font-size: 25px;
-  padding: 20px 0 20px 0;
-}
-
-#text-bottom {
-  margin-left: 40%;
-  margin-top: 40px;
-  color: white;
+footer .footer a:hover {
+  color: rgb(249, 249, 249);
+  text-decoration: underline;
 }
 
 .cards {

@@ -1,7 +1,9 @@
+@import"../../scss/components/variable";
 .value{
     flex: 1;
     h1{
         text-transform: uppercase;
+        font-size: $all-h1-destop;
     }
     gap: 20px;
     padding: 0px 50px 50px 50px;
@@ -24,40 +26,9 @@
         }
 
     }
-}
-@media (max-width:768px){
-    .value{
-        .card-value{
-            .card{
-                @include card-responsiv-768;
-            }
+    .content{
+        p{
+            font-size: $all-p-destop;
         }
-        .content{
-            p{
-                font-size: 10px;
-            }
-        }
-        
     }
-}
-@media (max-width:400px){
-    .value{
-        .card-value{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            p{
-                display: none;
-            }
-            .card{
-                @include card-responsiv-400;
-                padding: 10px;
-            }
-        }
-        .content{
-            p{
-                font-size: 10px;
-            }
-        }
-    }  
 }

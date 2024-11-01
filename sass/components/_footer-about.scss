@@ -10,15 +10,13 @@ footer{
         h3{
             color: white;
         }
-        p{
-            color: rgb(121, 121, 121);
+        a{
+            color: rgb(164, 164, 164);
+            text-decoration: none;
         }
-    }
-}
-@media (max-width:768px){
-    footer{
-       p{
-        font-size: 10px;
-       }
+        a:hover{
+            color: rgb(249, 249, 249);
+            text-decoration:underline;
+        }
     }
 }

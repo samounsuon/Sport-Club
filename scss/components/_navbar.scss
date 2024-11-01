@@ -1,7 +1,5 @@
+@import"../../scss/components/variable";
 nav{
-    position: sticky;
-    top: 0;
-    z-index: 10;
     @include display-column(start,start);
     text-transform: uppercase;
     .nav-top{
@@ -81,7 +79,7 @@ nav{
                         border: none;
                         padding: 8px 20px;
                         font: bold 18px serif;
-                        text-transform: uppercase;
+                        text-transform:  uppercase;
                         border-radius: 10px 0px 10px 0px ;
                         letter-spacing: 0.5px;
                         cursor: pointer;
@@ -254,8 +252,8 @@ nav{
     }
 }
 
-// @import "../components/variable";
-// // @import "../mixins/responsive";
+@import "../components/variable";
+// @import "../mixins/responsive";
 // @import "./mixins";
 // *{
 //     margin: 0;
