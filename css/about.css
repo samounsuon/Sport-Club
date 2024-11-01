@@ -12,10 +12,6 @@
   font-family: "Calibri", sans-serif;
 }
 
-h1 {
-  font-size: xx-large;
-}
-
 .background {
   height: 100vh;
   background: url(../../image/about/athletes-1867185_1280.jpg);
@@ -61,6 +57,9 @@ h1 {
   color: white;
   text-decoration: none;
 }
+.about-more .about-more-left .about-content span:hover {
+  background-color: goldenrod;
+}
 .about-more .about-more-left .about-content-center {
   width: 95%;
 }
@@ -68,6 +67,9 @@ h1 {
   background-color: #CFA344;
   padding: 10px 40px;
   color: white;
+}
+.about-more .about-more-left .btn:hover {
+  border-radius: 10px;
 }
 .about-more .about-more-right .about-more-right-img {
   display: flex;
