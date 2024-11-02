@@ -1,74 +1,73 @@
-.be-member{
-    @include display-column(start,start);
+.be-member {
+    @include display-column(start, start);
     padding: 50px;
-    .be-basketball{
-        @include display-row(start,start);
-        height: 100vh;
-        .be-basketball-left{
+    height: fit-content;
+    .be-basketball {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 30px;
+        height: fit-content;
+        .be-basketball-left {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
             width: 60%;
-            padding-top: 50px;
-            padding-right: 25px;
-            h1{
-                font: 100 35px sans-serif;
-                width: 60%;
-                line-height: 1.3em;
-                color: black;
+            padding: 50px 25px 25px 0px;
+            gap: 10px;
+            .be-basketball-content {
                 width: 100%;
-                text-transform: uppercase;
-                text-decoration: underline;
-                padding-bottom: 15px;
-                >span{
-                    text-decoration: underline;
+                h1 {
+                    font: 100 $all-big-h1 sans-serif;
+                    line-height: 1.3em;
+                    color: black;
+                    width: 100%;
                     text-transform: uppercase;
-                    color: $all-color;
-                    font: 300 35px;
+                    text-decoration: underline;
+                    padding-bottom: 15px;
+                    > span {
+                        text-decoration: underline;
+                        text-transform: uppercase;
+                        color: $all-color;
+                        font: 100 $all-big-h1;
+                    }
+                }
+                p {
+                    font: 100 $all-big-p;
+                    line-height: 1.3em;
+                    padding-bottom: 15px;
+                    padding-right: 25px;
                 }
             }
-            p{
-                font: 100 25px sans-serif;
-                line-height: 1.5em;
-                color: $all-color;
-                padding-bottom: 15px;
-                padding-right: 25px;
-            }
-            button{
+            button {
                 @include button-style;
                 border: 1px solid transparent;
+                width: fit-content;
             }
-            button:hover:not(.btn button){
+
+            button:hover:not(.btn button) {
                 @include hover-button-style;
             }
-            .btn{
-                position: relative;
-                top: 70px;
-                left: 60%;
-                button{
-                    clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 6% 49%, 0% 0%);
-                    padding: 15px 100px;
-                    font: 100 30px sans-serif;
-                    background: $all-color;
-                    color: white;
-                    border: none;
-                   
-                }
-                button:hover{
-                    text-decoration: underline;
-                    color: yellow;
-                }
-            }
         }
-        .be-basketball-right{
+        .be-basketball-right {
+            margin-left: 20px;
             width: 40%;
-            height: 85vh;
-            @include display-row(center,center);
-            background: #f7f4f4;
             padding: 50px;
+            height: fit-content;
+            @include display-row(center, center);
+            background: #f7f4f4;
+            border-radius: 12px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            img{
+            img {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 object-fit: contain;
+                border-radius: 8px;
             }
         }
     }
+    
 }
+@import "../components/mixin/responsive";
+
+

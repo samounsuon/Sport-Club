@@ -9,6 +9,7 @@
   height: 100vh;
   background: url(../image/about/sports-538135.jpg);
   background-size: cover;
+  background-position: left;
   color: white;
   display: flex;
   align-items: center;

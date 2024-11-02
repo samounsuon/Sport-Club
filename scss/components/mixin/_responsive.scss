@@ -1,0 +1,704 @@
+@media (max-width: 1023px) {
+    nav {
+        .nav-button {
+            .nav-button-left {
+                h1 {
+                    display: none;
+                }
+            }
+            .nav-button-right {
+                ul {
+                    gap: 35px;
+                    li {
+                        a {
+                            font-size: 1.25rem; 
+                        }
+                        button {
+                            font-size: 1.25rem; 
+                            padding: 6px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        .nav-top{
+            p:first-child{
+                display: none;
+            }
+            .nav-top-right{
+                p{
+                    font-size: $tablet-text-p;
+                }
+
+            }
+        }
+        .nav-button {
+            .nav-button-left {
+                h1 {
+                    display: none;
+                }
+            }
+            .nav-button-right {
+                ul {
+                    padding-right: 40px;
+                    gap: 35px;
+                    li {
+                        a {
+                            font-size: 1rem; 
+                        }
+                        button {
+                            font-size: 1rem; 
+                            padding: 6px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    nav {
+        .nav-top{
+            p:first-child{
+                display: none;
+            }
+            .nav-top-right{
+                p{
+                    font-size: 0.75rem;
+                }
+
+            }
+        }
+        .nav-button {
+            height: 9vh;
+            .nav-button-left {
+                h1 {
+                    display: none;
+                }
+            }
+            .nav-button-right {
+                ul {
+                    gap: 35px;
+                    padding-right: 35px;
+                    li {
+                        a {
+                            font-size: 0.875rem; 
+                        }
+                        button {
+                            font-size: 0.875rem; 
+                            padding: 4px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    nav {
+        .nav-top{
+            display: none;
+        }
+        .nav-button {
+            height: 8vh;
+            padding: 0;
+            .nav-button-left {
+                h1 {
+                    display: none;
+                }
+            }
+            .nav-button-right {
+                ul {
+                    gap: 15px;
+                    padding-right: 20px;
+                    li {
+                        a {
+                            font-size: 0.8rem; 
+                        }
+                        button {
+                            font-size: 0.8rem; 
+                            padding: 4px 10px;
+                        }
+                    }
+                }
+            }
+            .nav-button-left{
+                padding-left: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 885px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            flex: 1;
+            height: 82vh;
+            h1{
+                color: white;
+                font: $all-big-h1 sans-serif;
+                padding: 40px 10px 10px 40px;
+                line-height: 1.2em;
+                width: 70%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 40px;
+                font-family: sans-serif;
+                line-height: 1.3em;
+                width: 70%;
+            }
+            button{
+                background: $all-color;
+                color: white;
+                padding: 15px 20px;
+                margin: 10px 0 0 40px;
+                font: bold $button-small-font-size sans-serif;
+                border: none;
+            }
+        }
+        .interface-right{
+            display: none;
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            flex: 6;
+            height: 82vh;
+            h1{
+                color: white;
+                font: $tablet-text-h1 sans-serif;
+                padding: 30px 10px 10px 30px;
+                line-height: 1.2em;
+                width: 80%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 30px;
+                font: $tablet-text-p sans-serif;
+                line-height: 1.3em;
+                width: 80%;
+            }
+            button{
+                margin: 10px 0 0 30px;
+                padding: 15px 20px;
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    .interface{
+        height: 82vh;
+        background: url(../../image/home/home_interface.png) center / cover no-repeat;
+        .interface-left{
+            height: 82vh;
+            h1{
+                color: white;
+                font: $phone-text-h1 sans-serif;
+                padding: 20px 8px 8px 20px;
+                line-height: 1.2em;
+                width: 90%;
+            }
+            p{
+                color: white;
+                padding: 0px 10px 10px 20px;
+                font-family: $phone-text-p sans-serif;
+                line-height: 1.3em;
+            }
+            button{
+                padding: 15px 20px;
+                margin: 10px 0 0 20px;
+                font: bold 12px sans-serif;
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .new-articles{
+        .football{
+            padding: 0px;
+            .football-head{
+                h1{
+                    font-size: $tablet-text-h1;
+                }
+                p{
+                    font-size: $tablet-text-p;
+                }
+            }
+            .football-butt{
+                width: 100%;
+            }
+        }
+        .new-articles-img {
+            height: fit-content;
+            img {
+                height: 100%;
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:420px) {
+    .new-articles{
+        .football{
+            padding: 0px;
+            .football-head{
+                h1{
+                    font-size: $phone-text-h1;
+                }
+                p{
+                    font-size: $phone-text-p;
+                }
+            }
+            .football-butt{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        .new-articles-img {
+            height: fit-content;
+            img {
+                height: 100%;
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .what-we-do .what-we-do-content .content-item {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .what-we-do {
+        height: auto;
+    }
+    
+    .what-we-do-head {
+        h1 {
+            font-size: $all-big-h1;
+        }
+        p {
+            font-size: $all-big-p;
+        }
+    }
+
+    .what-we-do-content .content-item {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .what-we-do-head {
+        h1 {
+            font-size: $tablet-text-h1;
+        }
+        p {
+            font-size: $tablet-text-p;
+        }
+    }
+
+    .what-we-do-content-items {
+        gap: 10px;
+    }
+    .what-we-do-content .content-item {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .what-we-do-head {
+        h1 {
+            font-size: $phone-text-h1;
+        }
+        p {
+            font-size: $phone-text-p;
+            width: 90%;
+        }
+    }
+
+    .what-we-do-content .content-item {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .content-item-pic img {
+        width: 60px;
+        height: 60px;
+    }
+}
+.be-member {
+    @media (max-width: 1200px) {
+        .be-basketball-left {
+            width: 55%;
+        }
+        .be-basketball-right {
+            width: 45%;
+            padding: 30px 0px;
+            background: #000;
+        }
+    }
+    @media (max-width: 992px) {
+        .be-member{
+            padding: 0px 0px 50px 0px;
+            .be-basketball{
+                padding: 50px 0px;
+                .be-basketball-left {
+                    padding-top: 20px;
+                    h1 {
+                        font-size: $all-big-h1;
+                    }   
+                    p {
+                        font-size: $all-big-p;
+                        padding-right: 20px;
+                    }
+                }
+                .be-basketball-right {
+                    padding: 25px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .be-basketball{
+            padding: 0px 0px 50px 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .be-basketball-left{
+                width: 100%;
+                padding-right: 0px;
+                h1 {
+                    font-size: $tablet-text-h1;
+                }   
+                p {
+                    font-size: $tablet-text-p;
+                    padding-right: 0px;
+                }
+            }
+            .be-basketball-right{
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .be-basketball{
+            padding: 0px 0px 20px 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .be-basketball-left{
+                width: 100%;
+                h1 {
+                    font-size: $phone-text-h1;
+                }   
+                p {
+                    font-size: $phone-text-p;
+                    padding-right: 0px;
+                }
+            }
+    
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .sport-evert-left {
+        padding-right: 20px;
+        h1 {
+            font-size: $all-big-h1;
+        }
+        
+        p {
+            font-size: $all-big-p;
+            padding-right: 20px;
+        }
+
+        button {
+            padding: 10px 80px;
+            font-size: $button-small-font-size;
+            left: 60%;
+        }
+    }
+
+    .sport-evert-right {
+        padding: 40px;
+        
+    }
+}
+
+@media (max-width: 992px) {
+    .sport-evert-left {
+        padding:50px 0;
+        h1 {
+            font-size: $all-big-h1;
+        }
+        
+        p {
+            font-size: $all-big-p;
+            padding-right: 15px;
+        }
+
+        button {
+            padding: 10px 60px;
+            font-size: $button-big-font-size;
+        }
+    }
+
+    .sport-evert-right {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sport-evert{
+        margin-top: 30px;
+        .sport-evert-left {
+            width: 100%;
+            padding:50px 0;
+            h1 {
+                font-size: $tablet-text-h1;
+            }
+            
+            p {
+                font-size: $tablet-text-p;
+                padding-right: 10px;
+            }
+
+            button {
+                padding: 8px 50px;
+                font-size: $button-small-font-size;
+                left: 50%;
+            }
+        }
+
+        .sport-evert-right {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    .sport-evert{
+        .sport-evert-left {
+            h1 {
+                font-size: $phone-text-h1;
+            }
+            
+            p {
+                font-size: $phone-text-p;
+                padding-right: 5px;
+            }
+
+            button {
+                padding: 8px 40px;
+                font-size: $button-small-font-size;
+                left: 45%;
+            }
+        }
+
+        .sport-evert-right {
+            padding: 15px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .what-are-they-left { 
+        width: 55%; 
+    }
+    .what-are-they-right { 
+        width: 45%; 
+        padding: 30px; 
+    }
+}
+@media (max-width: 992px) {
+    .what-are-they{
+        flex-direction: column;
+        padding: 30px 0;
+        .what-are-they-left, .what-are-they-right {
+            width: 100%;
+        }
+        .what-are-they-content {
+            h1 {
+                font-size: $all-big-h1; 
+            }
+            p { 
+                font-size: $all-big-p; 
+                padding-right: 20px; 
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .what-are-they{
+        padding: 20px 0;
+        .what-are-they-content {
+            h1 { 
+                font-size: $tablet-text-h1; 
+            }
+            p { 
+                font-size: $tablet-text-p; 
+            }
+        }
+        .about-sport .review .about-sport-left, .about-sport .review .about-sport-right {
+            width: 100%;
+        }
+        .what-are-they-right {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .what-are-they{
+        padding: 15px 0;
+        .what-are-they-left{
+            .what-are-they-content{
+                h1{
+                    font-size: $phone-text-h1;
+                }
+                p{
+                    font-size: $phone-text-p;
+                }
+                .about-sport{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .review{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        padding: 0;
+                        .about-sport-left{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            .value{
+                                width: 100%;
+                                @include display-column(center,center);
+                                h2{
+                                    width: 100%;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .about-sport-right{
+                            width: 100%;
+                            border: none;
+                            p{
+                                padding:10px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.activity{
+    @media (max-width: 768px) {
+        padding: 30px 20px;
+        .activity-card {
+            .card {
+                display: flex;
+                width: 100%;
+                h2{
+                    font-size: 1.375rem;
+                }
+                p{
+                    font-size: $tablet-text-p;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        padding: 20px 50px;
+        .activity-card {
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                h2{
+                    font-size: 1.25rem;
+                }
+                p{
+                    font-size: $phone-text-p;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .list-sport{
+        h1:not(.box h1){
+            font-size: $all-big-h1;
+        }
+        .list-sport-card{
+            .card1,.card2{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .list-sport{
+        h1:not(.box h1){
+            font-size: $tablet-text-h1;
+        }
+        .list-sport-card{
+            gap: 30px;
+            .card1,.card2 ,.box{
+                padding: 10px;
+                h1{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .list-sport{
+        padding: 10px;
+        h1:not(.box h1){
+            font-size: $phone-text-h1;
+        }
+        .list-sport-card{
+            gap: 15px;
+            .card1,.card2,.box{
+                padding: 5px;
+                h1{
+                    font-size: 0.75rem;
+  
+                }
+            }
+        }
+    }
+}

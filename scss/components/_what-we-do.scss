@@ -1,75 +1,86 @@
-.what-we-do{
-    @include display-column(center,space-around);
+.what-we-do {
+    @include display-column(center, space-around);
     background: url(../../image/home/Bg_what_we_do.png) center / cover no-repeat;
     height: 100vh;
     width: 100%;
     color: white;
     text-align: center;
-    .what-we-do-head{
-        @include display-column(center,center);
-        gap: 10px;
-        h1{
-            border-bottom: 1px solid transparent;
-            font: 100 $all-big-h1 sans-serif;
-            color: yellow;
+    .what-we-do-head {
+        @include display-column(center, center);
+        gap: 15px;
+        h1 {
+            font: 600 $all-big-h1 sans-serif;
+            color: #ffd700;
+            border-bottom: 2px solid transparent;
+            transition: border 0.3s ease, color 0.3s ease;
         }
-        h1:hover{
-            border-bottom: 1px solid yellow;
+        h1:hover {
+            border-bottom: 2px solid #ffd700;
+            color: #ffeb3b;
             cursor: pointer;
         }
-        p{
-            font: 100 $all-small-p sans-serif;
-            line-height: $all-small-p;
-            letter-spacing: 1px;
+        p {
+            font: 400 $all-small-p;
             line-height: $line-height;
-            width: 80%;
+            width: 75%;
+            color: rgba(255, 255, 255, 0.85);
+            margin: 0 auto;
         }
     }
-    .what-we-do-content{
-        padding: 50px;
-        .what-we-do-content-items{
-            @include display-row(center,space-evenly);
-            gap: 10px;
-            height: 30vh;
-            // background: #000;
-            .content-item{
-                @include display-row(center,center);
-                background: #00000038;
-                padding: 0px 10px;
-                border-radius: 10px;
-                height: 100%;
-                .content-item-pic{
-                    img{
-                        width: 8vw;
-                        background: rgba(255, 255, 0, 0.733);
-                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-                        border-radius: 10px;
+    .what-we-do-content {
+        .what-we-do-content-items {
+            @include display-row(center, space-evenly);
+            gap: 15px;
+            flex-wrap: wrap;
+            .content-item {
+                @include display-column(center, center);
+                background: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                width: 100%;
+                max-width: 300px;
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 20px;
+                }
+                .content-item-pic {
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        background: rgba(255, 255, 0, 0.5);
+                        border-radius: 12px;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px, rgba(60, 64, 67, 0.15) 0px 2px 6px;
                     }
                 }
-                .content-item-text{
-                    @include display-column(start,center);
-                    text-align: left;
-                    padding: 25px;
-                    gap: 5px;
-                    h2{
-                        font: 100 1.3vw sans-serif;
+                .content-item-text {
+                    @include display-column(start, center);
+                    padding: 15px;
+                    gap: 8px;
+                    h2 {
+                        font: 100 1.2rem sans-serif;
+                        color: #ffd700;
                         text-transform: uppercase;
-                        color: yellow;
-                        letter-spacing: 0.5px;
+                        letter-spacing: 1px;
                         border-bottom: 1px solid transparent;
+                        transition: border 0.3s ease, color 0.3s ease;
+                        margin: 0 auto;
                     }
-                    h2:hover{
-                        border-bottom: 1px solid yellow;
+                    h2:hover {
+                        border-bottom: 1px solid #ffd700;
+                        color: #ffeb3b;
                         cursor: pointer;
                     }
-                    p{
-                        font: 1 1vw sans-serif;
-                        line-height: $line-height;
-                        letter-spacing: 0.8px;
+                    p {
+                        font: 100 1rem Verdana, sans-serif;
+                        line-height: 1.3em;
+                        color: rgba(255, 255, 255, 0.9);
+                        text-align: center;
                     }
                 }
-                
             }
         }
     }
 }
+@import "../components/mixin/responsive.scss"
