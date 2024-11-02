@@ -6655,6 +6655,38 @@ nav .nav-button .nav-button-right ul li button:focus {
     font-size: 0.75rem;
   }
 }
+footer {
+  padding: 20px 50px;
+  background-color: #292928;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+footer .footer h3 {
+  color: white;
+}
+footer .footer a {
+  color: rgb(164, 164, 164);
+  text-decoration: none;
+}
+footer .footer a:hover {
+  color: rgb(249, 249, 249);
+  text-decoration: underline;
+}
+
 @media (max-width: 1023px) {
   nav .nav-button .nav-button-left h1 {
     display: none;
