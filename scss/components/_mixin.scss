@@ -51,19 +51,36 @@
 //     align-items: center;
 //     flex-direction: row;
 // }
-@mixin button-style{
+// Base Button Style
+@mixin button-style {
     background: $all-color;
-    padding: 12px 25px;
+    padding: 12px 24px;
     text-transform: uppercase;
     color: white;
-    font: 100 $all-big-p sans-serif;
+    font: 500 1rem sans-serif;
     border: none;
-    cursor: pointer;  
+    border-bottom: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px;
+    @media (max-width: 768px) {
+        padding: 10px 20px;
+        font: 500 0.9rem sans-serif;
+    }
+
+    @media (max-width: 480px) {
+        padding: 8px 16px;
+        font: 500 0.8rem sans-serif;
+    }
 }
-@mixin hover-button-style{
-border-radius: 15px;
-text-decoration: underline;
-color: yellow;
-cursor: pointer;
-border-bottom: 1px solid teal;
+@mixin hover-button-style {
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid teal;
+    background: rgba(153, 176, 245, 0.8);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 4px 8px;
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
 }
