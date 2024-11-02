@@ -1,84 +1,93 @@
-.list-sport{
-    background: teal;
+.list-sport {
+    background: #e7e0e0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 0;
     gap: 50px;
-    h1:not(.box h1,.card-sport h1){
-        font: 100 $all-big-h1 sans-serif;
-        color: white;
+    h1:not(.box h1) {
+        font: bold $all-big-h1 sans-serif;
+        color: $all-color;
         text-transform: uppercase;
         text-decoration: underline;
+        text-align: center;
     }
-    .list-sport-card{
+    .list-sport-card {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 35px;
         width: 100%;
-        .card1{
-            h1{
-                border-radius: 10px 10px 0px 0px;
-            }
-            img{
-                border-radius: 0px 0px 10px 10px;
-            }
-        }
-        .card2{
-            h1{
-                border-radius: 0px 0px 10px 10px;
-            }
-            img{
-                border-radius: 10px 10px 0px 0px;
-            }
-        }
-        .box{
-            flex: 1;
+        .box {
+            width: 19%;
             display: flex;
             flex-direction: column;
             gap: 20px;
             padding: 20px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.158);
-            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(169, 179, 194) 0px 0px 0px 1px inset;
-            h1{
-                font: 100 $all-small-h1 sans-serif;
-                background: pink;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            
+            h1 {
+                font: 500 $all-small-h1 sans-serif;
+                color: $all-color;
+                background: #e7e0e0;
                 text-align: center;
-                padding: 20px;
-                
-            }
-            img{
                 width: 100%;
-                
+                padding: 10px 0px;
+                border-radius: 10px ;
+                transition: color 0.3s ease, 
+                text-shadow 0.3s ease;
+                &:hover {
+                    color: yellow;
+                }
+            }
+            img {
+                width: 100%;
+                border-radius: 0 0 12px 12px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            &:hover { 
+                transform: scale(1.05);
             }
         }
-    }
-    .list-sport-butt{
-        display: flex;
-        justify-content: center;
-        .list-sport-card{
-            width: 75%;
-            .card-sport{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                padding: 20px;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.158);
-                box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(169, 179, 194) 0px 0px 0px 1px inset;
-                img{
-                    width: 100%;
-                    border-radius: 10px 10px 0px 0px;
+        .card1, .card2 {
+            text-align: center;
+            .box {
+                border-radius: 15px;
+            }
+            h1 {
+                font: 500 $all-small-h1;
+                border-radius: 10px 10px 10px 10px;
+                &:hover {
+                    color: rgb(3, 3, 3);
+                    transform: translateY(-4px);
+                    transition: all 0.3s ease;
+                    background: white;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 4px 8px;
                 }
-                h1{
-                    font: 100 $all-small-h1 sans-serif;
-                    background: pink;
-                    text-align: center;
-                    padding: 20px;
-                    border-radius: 0px 0px 10px 10px;
+            }
+            img {
+                border-radius: 10px 10px 10px 10px;
+                transition: transform 0.3s ease;
+            }
+        }
+        .card2 {
+            h1 {
+                transition: color 0.3s ease, text-shadow 0.3s ease;
+
+                &:hover {
+                    color: rgb(3, 3, 3);
+                    transform: translateY(4px);
+                    transition: all 0.3s ease;
+                    background: white;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 8px, rgba(0, 0, 0, 0.3) 0px 4px 8px;
                 }
             }
         }
     }
 }
+
+@import "../components/mixin/responsive";

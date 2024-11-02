@@ -1,117 +1,100 @@
-@import"../../scss/components/variable";
-nav{
-    @include display-column(start,start);
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    @include display-column(start, start);
     text-transform: uppercase;
-    .nav-top{
+    .nav-top {
         @include display-row(center, space-between);
         background: #292928;
         color: white;
         height: 5vh;
         width: 100%;
-        .nav-top-right{
-            @include display-row(center,start);
+        .nav-top-right {
+            @include display-row(center, start);
             gap: 20px;
-            padding: 0px 45px;
-            p{
-                letter-spacing: 0.5px
+            padding: 0 45px;
+            p {
+                letter-spacing: 0.5px;
+                font-size: $all-big-p;
             }
         }
-        .nav-top-left{
-            @include display-row(center,start);
+        .nav-top-left {
+            @include display-row(center, start);
             gap: 20px;
-            padding: 0px 45px;
-            img{
+            padding: 0 45px;
+            img {
                 height: 20px;
                 cursor: pointer;
             }
         }
     }
-    .nav-button{
+    .nav-button {
         @include display-row(center, space-between);
         width: 100%;
         height: 12vh;
         background: #3A3A3A;
         border-bottom: 4px solid rgb(162, 212, 212);
-        .nav-button-left{
-            @include display-row(center,start);
+        .nav-button-left {
+            @include display-row(center, start);
             gap: 20px;
             width: 20%;
             height: 100%;
             background: $all-color;
             padding-left: 50px;
             clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-            img{
+            img {
                 height: 80%;
                 cursor: pointer;
             }
-            h1{
+            h1 {
                 color: white;
-                font-size: 30px;
+                font-size: 1.875rem; 
                 font-weight: 100;
             }
         }
-        .nav-button-right{
+        .nav-button-right {
             width: 80%;
-            ul{
-                @include display-row(center,end);
+            ul {
+                @include display-row(center, end);
                 height: 100%;
                 gap: 75px;
                 padding-right: 50px;
-                li{
+                li {
                     list-style: none;
-                    a{
+                    a {
                         color: white;
                         text-decoration: none;
-                        font-size: 20px;
+                        font-size: 1.25rem;
                         letter-spacing: 0.5px;
-                        &:hover{
+                        transition: all 0.5s ease-in-out;
+                        &:hover {
                             color: yellow;
-                            border-bottom: 3px solid yellow;
+                            transform: scale(1.1);
+                        }
+                        &:focus {
+                            outline: 2px solid yellow; 
                         }
                     }
-                    #color{
-                        border-bottom: 3px solid yellow;
+                    #color {
+                        border-bottom: 2px solid yellow;
                         color: yellow;
                     }
-                    button{
-                        background: $all-color;
+                    button {
+                        background: $all-color; 
                         color: white;
                         border: none;
                         padding: 8px 20px;
-                        font: bold 18px serif;
-                        text-transform:  uppercase;
-                        border-radius: 10px 0px 10px 0px ;
+                        font: bold 1.125rem serif; 
+                        text-transform: uppercase;
+                        border-radius: 10px 0 10px 0;
                         letter-spacing: 0.5px;
                         cursor: pointer;
-                        &:hover{
+                        &:hover {
                             color: yellow;
                         }
-                    }
-                }
-            }
-            
-        }
-    }
-}
-@media (max-width:1023px){
-    nav{
-        .nav-button{
-            height: 12vh;
-            .nav-button-left{
-                h1{
-                    display: none;
-                }
-            }
-            .nav-button-right{
-                ul{
-                    gap: 35px;
-                    li{
-                        a{
-                            font-size: 14px;
-                        }
-                        button{
-                            font-size: 14px;
-                            padding: 6px 10px;
+                        &:focus {
+                            outline: 2px solid yellow;
                         }
                     }
                 }
@@ -119,230 +102,4 @@ nav{
         }
     }
 }
-@media (max-width:768px){
-    nav{
-        
-        .nav-top{
-            .nav-top-left{
-                gap: 15px;
-                padding: 0px 20px;
-            }
-            .nav-top-right{
-                p{
-                    display: none;
-                }
-            }
-        }
-        .nav-button{
-            height:11vh;
-            .nav-button-left{
-                padding-left: 25px;
-                width: 20%;
-                
-            }
-            .nav-button-right{
-                padding-right: 20px;
-                width: 80%;
-                ul{
-                    gap: 30px;
-                    padding-right: 10px;
-                    li{
-                        a{
-                            font-size: 12x;
-                        }
-                        button{
-                            font-size: 12px;
-                            padding: 5px 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width:600px){
-    nav{
-        .nav-top{
-            display: none;
-        }
-       .nav-button{
-            height: 10vh;
-            .nav-button-left{
-                padding-left: 10px;
-                width: 25%;
-            }
-            .nav-button-right{
-                padding-right: 10px;
-                width: 75%;
-                ul{
-                    gap: 15px;
-                    li{
-                        a{
-                            font-size: 11px;
-                        }
-                        button{
-                            font-size: 11px;
-                            padding: 4px 8px;
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width:400px){
-    nav{
-        
-        .nav-top{
-            .nav-top-left{
-                gap: 15px;
-                padding: 0px 20px;
-            }
-            .nav-top-right{
-                p{
-                    display: none;
-                }
-            }
-        }
-        .nav-button{
-            height:9vh;
-            .nav-button-left{
-                padding-left: 25px;
-                width: 20%;
-                
-            }
-            .nav-button-right{
-          
-                width: 80%;
-                ul{
-                    gap: 15px;
-                 
-                    li{
-                        a{
-                            font-size: 10x;
-                        }
-                        button{
-                            font-size: 9px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media (max-width:390px){
-    nav{
-       .nav-button{
-        height: 8vh;
-            .nav-button-right{
-                ul{
-                    gap: 10px;
-                    li{
-                        a{
-                            font-size: 10px;
-                        }
-                        button{
-                            font-size: 9px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@import "../components/variable";
-// @import "../mixins/responsive";
-// @import "./mixins";
-// *{
-//     margin: 0;
-//     padding: 0;
-// }
-// nav{
-//     @include display-column;
-//     .nav-top{
-//         @include display-row;
-//         justify-content: space-between;
-//         background: #292928;
-//         color: white;
-//         height: 5vh;
-//         width: 100%;
-//         .nav-top-right{
-//             @include display-row;
-//             gap: 20px;
-//             padding: 0px 35px;
-            
-//         }
-//         .nav-top-left{
-//             @include display-row;
-//             gap: 20px;
-//             padding: 0px 35px;
-//             img{
-//                 height: 20px;
-//                 border: 1px solid white;
-//                 border-radius: 10px;
-//             }
-//             #bird{
-//                 width: 20px;
-//                 height: 3.5vh;
-//             }
-//             #fb{
-//                 width: 20px;
-//                 height: 3.5vh;
-//             }
-//             #ig{
-//                 width: 20px;
-//                 height: 3.5vh;
-//             }
-//         }
-//     }
-//     .nav-button{
-//         @include display-row;
-//         justify-content: space-between;
-//         width: 100%;
-//         height: 13vh;
-//         background: #3A3A3A;
-        
-//         .nav-button-left{
-//             @include display-row;
-//             gap: 20px;
-//             padding: 0px 35px;
-//             background: #CFA344;
-//             width: 20%;
-//             height: 100%;
-//             clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-//             img{
-//                 width: 60px;
-//             }
-//             h1{
-//                 color: white;
-//                 font-size: 30px;
-//             }
-//         }
-//         .nav-button-right{
-//             @include display-row;
-//             gap: 20px;
-//             padding: 0px 35px;
-
-//             ul{
-//                 display: flex;
-//                 gap: 100px;
-//                 li{
-//                     list-style: none;
-//                     a{
-//                         color: white;
-//                         text-decoration: none;
-//                         font-size: 30px;
-//                         font-family: sans-serif;
-//                         font-weight: 300;
-                        
-//                     }
-//                     #color{
-//                         color: yellow;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+@import "./mixin/responsive.scss";

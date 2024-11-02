@@ -20,9 +20,12 @@ form{
     gap: 5px;
     height: 80vh;
 }
+input{
+    outline: none;
+}
 label{
     color: rgb(0, 0, 0);
-    font-weight: bold;
+    font-weight: 300;
 }
 .usernames{
     display: flex;
@@ -95,14 +98,12 @@ textarea{
     justify-content: center;
 }
 #submit{
-    background-color:rgba(255, 174, 0, 0.872);
-    color: white;
-    font-size: 20px;
-    border: none;
-    margin: 9px 27px;
-    padding: 6px 12px;
-    border-radius: 60px;
+    @include button-style;
+    font-weight: bold;
     width: 30%;
+}
+#submit:hover{
+    @include hover-button-style;
 }
 .Gender{
     margin-left: 20px;

@@ -1,53 +1,73 @@
-.activity{
-    background: #ebebf0fa;
-    padding: 50px;
-    @include display-column(center,center);
-    gap: 25px;
-    h1{
+.activity {
+    text-align: center;
+    padding: 50px 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    h1 {
         font: 100 $all-big-h1 sans-serif;
-        text-decoration: underline;
+        color: #333;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
         text-transform: uppercase;
-        color: $all-color;
+        text-decoration: underline;
     }
-    .activity-card{
+    .activity-card {
         display: flex;
-        gap: 50px;
-        .card{
-            height: fit-content;
-            padding: 5px;
-            background: #ebebf0fa;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 20px;
+        .card {
+            width: 30%;
+            background-color: #fafafa;
             border-radius: 10px;
-            gap: 10px;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
             .img {
                 width: 100%;
-                height: 70%;
-
+                overflow: hidden;
+                border-bottom: 1px solid #e0e0e0;
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.3s ease;
+
+                    .card:hover & {
+                        transform: scale(1.05);
+                    }
                 }
             }
-
-            .card-content{
+            .card-content {
+                padding: 20px;
                 text-align: center;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                height: 30%;
-                padding: 25px 25px;
-                h2{
-                    font: 100 $all-small-h1 sans-serif;
+                h2 {
+                    font-family: sans-serif;
+                    font-size: $all-small-h1;
+                    color: #444;
+                    margin: 0 0 10px;
+                    font-weight: 100;
+                    letter-spacing: 0.5px;
                     text-transform: uppercase;
-                    border-bottom: 1px solid teal;
-                    padding: 10px;
                 }
-                p{
-                    font: 100 $all-small-p sans-serif;
-                    color: $all-color;
-                    line-height: 1.3em;
+                p {
+                    color: #666;
+                    font-size: 1rem;
+                    line-height: l$line-height;
+                    
                 }
             }
         }
     }
 }
+
