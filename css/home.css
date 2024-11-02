@@ -1,4 +1,9 @@
-/*# sourceMappingURL=home.css.map */dy {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-size: calc(0.75em + 1vmin);
 }
 
