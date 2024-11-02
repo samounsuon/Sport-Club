@@ -551,6 +551,15 @@ footer .footer a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 480px) {
+  footer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .footer {
+    width: 40%;
+  }
+}
 nav {
   display: flex;
   flex-direction: column;
