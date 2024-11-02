@@ -8,25 +8,23 @@
         @include display-column (start,space-between);
         .rugby-content{
             h1{
-                font:100 2.5vw sans-serif;
+                font:100 $all-big-h1;
                 border-bottom: 3px solid #000;
             }
             p{
-                font: 100 1.9vw sans-serif;
-                line-height: 1.5em;
+                font: 100 $all-big-p ;
+                line-height: $line-height;
                 padding-right: 25px;
-                margin-top: 10px;
-                color: $all-color;
+                margin-top: 20px;
                 q{
-                    font-weight: bold;
                     text-transform: uppercase;
-                    color: black
+                    color: black;
                 }
             }
             button{
                 @include button-style;
-                margin-top: 50px;
-                font-size: 1.9vw;
+                margin-top: 30px;
+                font-size: $all-big-p;
             }
             button:hover{
                 @include hover-button-style;
@@ -44,6 +42,46 @@
             right: 20%;
             width: 60%;
             border-radius: 10px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .rugby-content{
+        h1{
+            font:100 $tablet-text-h1;
+            border-bottom: 3px solid #000;
+        }
+        p{
+            font: 100 $tablet-text-p;
+            line-height: $line-height;
+            padding-right: 25px;
+            margin-top: 20px;
+            q{
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+    }
+}
+@media (max-width:480px) {
+    .rugby{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .rugby-right{
+            img:last-child{
+                display: none;
+            }
+        }
+        .rugby-left{
+            .rugby-content{
+                h1{
+                    font:100 $phone-text-h1;
+                }
+                p{
+                    font: 100 $phone-text-p;
+                }
+            }
         }
     }
 }

@@ -9,16 +9,16 @@
         height: 82vh;
         h1{
             color: white;
-            font: 40px sans-serif;
+            font:100 $all-big-h1 sans-serif;
             padding: 50px 10px 10px 50px;
             line-height: 1.3em;
             width: 60%;
         }
-        p{
+        p{  
             color: white;
             padding: 0px 10px 10px 50px;
-            font-family: sans-serif;
-            line-height: 1.5em;
+            font:$all-big-p sans-serif;
+            line-height: 1.3em;
         }
         button{
             @include button-style;
@@ -38,129 +38,4 @@
         }
     }
 }
-
-@media (max-width: 885px){
-    .interface{
-        height: 82vh;
-        background: url(../../image/home/home_interface.png) center / cover no-repeat;
-        .interface-left{
-            flex: 1;
-            height: 82vh;
-            h1{
-                color: white;
-                font: 35px sans-serif;
-                padding: 40px 10px 10px 40px;
-                line-height: 1.2em;
-                width: 70%;
-            }
-            p{
-                color: white;
-                padding: 0px 10px 10px 40px;
-                font-family: sans-serif;
-                line-height: 1.3em;
-                width: 70%;
-            }
-            button{
-                background: $all-color;
-                color: white;
-                padding: 15px 20px;
-                margin: 10px 0 0 40px;
-                font: bold 14px sans-serif;
-                border: none;
-            }
-        }
-        .interface-right{
-            display: none;
-            img{
-                width: 40%;
-            }
-        }
-    }
-}
-@media (max-width: 768px){
-    .interface{
-        height: 82vh;
-        background: url(../../image/home/home_interface.png) center / cover no-repeat;
-        .interface-left{
-            flex: 6;
-            height: 82vh;
-            h1{
-                color: white;
-                font: 30px sans-serif;
-                padding: 30px 10px 10px 30px;
-                line-height: 1.2em;
-                width: 80%;
-            }
-            p{
-                color: white;
-                padding: 0px 10px 10px 30px;
-                font-family: 20px sans-serif;
-                line-height: 1.3em;
-                width: 80%;
-            }
-            button{
-                margin: 10px 0 0 30px;
-                padding: 15px 20px;
-            }
-        }
-        .interface-right{
-            img{
-                width: 40%;
-            }
-        }
-    }
-}
-@media (max-width: 400px){
-    .interface{
-        height: 82vh;
-        background: url(../../image/home/home_interface.png) center / cover no-repeat;
-        .interface-left{
-            height: 82vh;
-            h1{
-                color: white;
-                font: 22px sans-serif;
-                padding: 20px 8px 8px 20px;
-                line-height: 1.2em;
-                width: 90%;
-            }
-            p{
-                color: white;
-                padding: 0px 10px 10px 20px;
-                font-family: 18px sans-serif;
-                line-height: 1.3em;
-            }
-            button{
-                padding: 15px 20px;
-                margin: 10px 0 0 20px;
-                font: bold 12px sans-serif;
-            }
-        }
-    }
-}
-@media (max-width: 320px){
-    .interface{
-        height: 82vh;
-        background: url(../../image/home/home_interface.png) center / cover no-repeat;
-        .interface-left{
-            flex: 8;
-            height: 82vh;
-            h1{
-                color: white;
-                font: 18px sans-serif;
-                padding: 20px 20px 10px 20px;
-                line-height: 1.2em;
-                width: 90%;
-            }
-            p{
-                color: white;
-                padding: 0px 20px 10px 20px;
-                font: 10px sans-serif;
-                line-height: 1.3em;
-            }
-            button{
-                background: $all-color;
-            }
-        }
-        
-    }
-}
+@import "./mixin/responsive.scss";

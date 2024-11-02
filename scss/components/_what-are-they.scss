@@ -1,87 +1,80 @@
-.what-are-they{
+.what-are-they {
     display: flex;
     margin-top: 50px;
     height: fit-content;
-    .what-are-they-left{
+    .what-are-they-left {
         width: 60%;
         height: fit-content;
-        .what-are-they-content{
-            @include display-column(space-between,start);
+        .what-are-they-content {
+            @include display-column(space-between, start);
             gap: 50px;
-            .content{
+            // padding: 50px;
+            .content {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 height: 60%;
-                h1{
-                    font:100 $all-big-h1 sans-serif;
+                h1 {
+                    font: 100 $all-big-h1 sans-serif;
                     text-transform: uppercase;
                     text-decoration: underline;
-                    span{
+                    span {
                         color: $all-color;
                         text-decoration: underline;
                     }
                 }
-                p{
-                    font: 100 $all-big-p sans-serif;
-                    color: $all-color;
+                p {
+                    font: 100 $all-big-p;
                     padding-right: 25px;
                     line-height: 1.3em;
                 }
-                button:not(.btn button){
+                button{
                     @include button-style;
                     width: fit-content;
-                    border-bottom: 1px solid transparent;
-                    
+                    border-bottom: 2px solid transparent;
                 }
-                button:not(.btn button):hover{
+                button:hover {
                     @include hover-button-style;
                 }
-                
-
-                
             }
-            .about-sport{
+            .about-sport {
                 @include display-column(center, center);
                 height: 40%;
-                p:not(.about-sport-right p){
-                    font: 100 $all-small-p sans-serif; 
+                p:not(.about-sport-right p) {
+                    font: 100 $all-small-p;
                     text-transform: uppercase;
                     padding-bottom: 25px;
                     text-decoration: underline;
-                    letter-spacing: 1px;
                     line-height: $line-height;
                 }
-                .review{
+                .review {
                     @include display-row(start, start);
-                    .about-sport-left{
+                    .about-sport-left {
                         @include display-row(center, space-between);
                         width: 50%;
                         height: 100%;
                         padding-right: 25px;
-                        img{
+                        img {
                             width: 30%;
                         }
-                        .value{
-                            @include display-column(center,start);
+                        .value {
+                            width: 70%;
+                            @include display-column(center, start);
                             height: 100%;
-                            h2{
-                                font-size: 1.8vw;
+                            h2 {
+                                font-size: 1.3rem;
                                 text-transform: uppercase;
                             }
-                            span{
-                                font-size: 1.2vw;
+                            span {
+                                font-size: 1rem;
                             }
                         }
-                        
                     }
-                    .about-sport-right{
+                    .about-sport-right {
                         width: 50%;
-                        // background: green;
                         border-left: 1px solid #000;
-                        p{
-                            font: 100 $all-small-p sans-serif;
-                            color: $all-color;
+                        p {
+                            font-size: $all-small-p;
                             padding: 0px 25px;
                             line-height: 1.3em;
                         }
@@ -90,13 +83,15 @@
             }
         }
     }
-    .what-are-they-right{
+
+    .what-are-they-right {
         width: 40%;
         padding: 50px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         background: #f7f4f4;
-        img{
+        img {
             width: 100%;
         }
     }
 }
+@import "../components/mixin/responsive";

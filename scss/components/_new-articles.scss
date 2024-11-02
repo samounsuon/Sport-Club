@@ -1,70 +1,64 @@
-.new-articles{
-    font-family: sans-serif;
-    @include display-row(start,center);
+.new-articles {
+    @include display-row(start, center);
     padding: 50px;
-    .football{
-        @include display-column(center,center);
+    .football {
+        @include display-column(center, center);
         padding: 0px 20px 20px 0px;
-        height: 80vh;
-        .football-head{
+        height: fit-content;
+        .football-head {
             width: 100%;
-            h1{
-                font-size: 35px;
-                font-weight: 300;
+            h1 {
+                font: 100 $all-big-h1 sans-serif;
                 text-transform: uppercase;
                 border-bottom: 3px solid #000;
-                span{
+                span {
                     color: $all-color;
                 }
             }
         }
-        .football-butt{
-            @include display-row(start,center);
+        .football-butt {
+            @include display-row(start, center);
             box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
             height: 100%;
-            padding: 25px ;
+            padding: 25px;
             margin-top: 5px;
             background: #e5eaed;
-            h1{
-                font: 300 30px;
+            h1 {
+                font: 100 $all-small-h1 sans-serif;
                 text-transform: uppercase;
             }
-            p{
-                color: $all-color;
-                font-size: 25px;
+            p {
+                font-size: $all-big-p;
                 line-height: 1.3em;
-                padding-right: 10px;
+                // padding-right: 25px;
             }
-            .football-content{
-                @include display-column(start,start);
+            .football-content {
+                @include display-column(start, start);
                 flex: 1;
                 gap: 20px;
-                button{
+                button {
                     @include button-style;
                 }
-                button:hover{
-                    text-decoration: underline;
-                    border-radius: 15px;
-                    color: yellow;
-                    border-bottom: 1px solid teal;
+                button:hover {
+                    @include hover-button-style;
                 }
             }
-            .football-img{
+            .football-img {
                 flex: 1;
-                @include display-row(end,center);
+                @include display-row(end, center);
                 height: 100%;
-                img{
+                img {
                     width: 100%;
                     border-radius: 3px;
+            
                 }
             }
         }
-
     }
-    .new-articles-img{
-        height: 63vh;
-        img{
+    .new-articles-img {
+        img {
             height: 100%;
         }
     }
 }
+@import "../components/mixin/responsive.scss"

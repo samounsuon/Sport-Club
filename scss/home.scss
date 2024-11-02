@@ -4,9 +4,15 @@
     margin: 0;
     padding: 0;
 }
-body {
-    font-size: calc(0.75em + 1vmin);
-  }
+p:not(.nav-top p){
+  font-family: Arial, sans-serif;
+  line-height: $line-height;
+  font-size: 1em;
+  color: #666;
+}
+h1:not(.nav-top h1){
+  font:100 2.5rem Arial, sans-serif;
+}
 @import "../scss/./components/./navbar";
 @import "../scss/./components/./home_interface";
 @import "../scss/./components/./new-articles";
@@ -18,3 +24,5 @@ body {
 @import "../scss/./components/./activity";
 @import "../scss/./components/./rugby";
 @import "../scss/./components/./list-sport";
+
+@import "../scss/./components/mixin/responsive.scss"
