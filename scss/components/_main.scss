@@ -27,7 +27,7 @@ main{
 .main-head{
     display: flex;
     flex-direction: column;
-    @include center;
+    // @include center;
     text-align: center;
     margin-top: 40px;
     h1{
