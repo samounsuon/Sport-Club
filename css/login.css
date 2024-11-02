@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -10,65 +9,38 @@
   height: 100vh;
   background: url(../image/about/sports-538135.jpg);
   background-size: cover;
+  background-position: left;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .main-form a, .main-form p, .main-form label {
   font-size: 14px;
 }
 .main-form form {
   width: 30%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D2A28B), color-stop(#7A5244), to(#300E09));
   background: linear-gradient(#D2A28B, #7A5244, #300E09);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 30px;
   border-radius: 5px;
-  -webkit-box-shadow: #A96851 0px 0px 2px 0px;
-          box-shadow: #A96851 0px 0px 2px 0px;
+  box-shadow: #A96851 0px 0px 2px 0px;
 }
 .main-form form .from-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 25px;
 }
 .main-form form .from-content .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: 1px solid #ffffff;
 }
 .main-form form .from-content .button .btn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 1;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 10px;
   font-weight: bold;
 }
@@ -89,13 +61,8 @@
   text-align: center;
 }
 .main-form form .from-content .input {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .main-form form .from-content input {
   height: 30px;
@@ -108,34 +75,13 @@
   background-color: gainsboro;
   color: black;
 }
-.main-form form .from-content ::-webkit-input-placeholder {
-  color: rgb(253, 253, 253);
-}
 .main-form form .from-content ::-moz-placeholder {
-  color: rgb(253, 253, 253);
-}
-.main-form form .from-content :-ms-input-placeholder {
-  color: rgb(253, 253, 253);
-}
-.main-form form .from-content ::-ms-input-placeholder {
   color: rgb(253, 253, 253);
 }
 .main-form form .from-content ::placeholder {
   color: rgb(253, 253, 253);
 }
-.main-form form .from-content input:hover::-webkit-input-placeholder {
-  color: gray;
-  padding-left: 10px;
-}
 .main-form form .from-content input:hover::-moz-placeholder {
-  color: gray;
-  padding-left: 10px;
-}
-.main-form form .from-content input:hover:-ms-input-placeholder {
-  color: gray;
-  padding-left: 10px;
-}
-.main-form form .from-content input:hover::-ms-input-placeholder {
   color: gray;
   padding-left: 10px;
 }
@@ -147,30 +93,15 @@
   outline: none;
 }
 .main-form form .from-content .forget-password {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .main-form form .from-content .forget-password .group-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 .main-form form .from-content .forget-password a {
@@ -235,4 +166,4 @@
     gap: 30px;
     width: 100%;
   }
-}
+}/*# sourceMappingURL=login.css.map */
