@@ -2,4 +2,15 @@ header{
     height: 100vh;
     background-image: url("/images/header/Group\ 132.png");
     background-size: cover;
+    background-position: right;
+    h1{
+        font:100 3rem sans-serif;
+        margin-bottom: 10px;
+    }
+    button{
+        @include button-style;
+    }
+    button:hover{
+        @include hover-button-style;
+    }
 }

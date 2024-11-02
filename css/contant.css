@@ -124,7 +124,7 @@ footer .footerbottom .texts {
 }
 
 .main-containner {
-  height: 175vh;
+  height: 100%;
   background-color: rgb(255, 255, 255);
 }
 .main-containner #boder-text {
@@ -232,13 +232,13 @@ main .main-right {
   }
   footer {
     height: 200vh;
-    margin-top: 100%;
+    margin-top: 20%;
   }
   footer .footertop {
     height: 100vh;
     width: 10%;
     margin-top: 10px;
-    background-color: white;
+    background-color: rgb(247, 244, 244);
     margin-bottom: 15%;
   }
   footer .footertop iframe {
@@ -253,7 +253,7 @@ main .main-right {
     margin-top: 50px;
   }
   .footerbottom .texts .text {
-    color: white;
+    color: rgb(247, 244, 244);
     padding: 0 60px 0 60px;
   }
   .footerbottom .texts .text .tillte {
@@ -529,7 +529,7 @@ nav .nav-button .nav-button-right ul li button:hover {
     gap: 35px;
   }
   nav .nav-button .nav-button-right ul li a {
-    font-size: 14x;
+    font-size: 14px;
   }
   nav .nav-button .nav-button-right ul li button {
     font-size: 14px;
