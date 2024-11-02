@@ -777,7 +777,8 @@ footer .footer a:hover {
 
 @media (max-width: 480px) {
   footer {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
   }
   footer .footer {
