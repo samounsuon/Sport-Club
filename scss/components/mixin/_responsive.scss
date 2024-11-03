@@ -702,3 +702,20 @@
         }
     }
 }
+@media (max-width:420px){
+    .list-sport{
+        padding: 10px;
+        h1:not(.box h1){
+            font-size: $phone-text-h1;
+        }
+        .list-sport-card{
+            gap: 10px;
+            .card1,.card2,.box{
+                padding: 5px;
+                h1{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

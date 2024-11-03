@@ -10,6 +10,7 @@
   height: 100vh;
   background: url(../image/about/sports-538135.jpg);
   background-size: cover;
+  background-position: left;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +70,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   padding: 10px;
   font-weight: bold;
 }
@@ -81,6 +84,8 @@
 }
 .main-form form .from-content .button .btn:hover {
   background-color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content .button .btn:hover a {
   color: black;
@@ -103,45 +108,69 @@
   border: none;
   border-bottom: solid 2px white;
   color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:hover {
   background-color: gainsboro;
   color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content ::-webkit-input-placeholder {
   color: rgb(253, 253, 253);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content ::-moz-placeholder {
   color: rgb(253, 253, 253);
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content :-ms-input-placeholder {
   color: rgb(253, 253, 253);
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content ::-ms-input-placeholder {
   color: rgb(253, 253, 253);
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content ::placeholder {
   color: rgb(253, 253, 253);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:hover::-webkit-input-placeholder {
   color: gray;
   padding-left: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:hover::-moz-placeholder {
   color: gray;
   padding-left: 10px;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:hover:-ms-input-placeholder {
   color: gray;
   padding-left: 10px;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:hover::-ms-input-placeholder {
   color: gray;
   padding-left: 10px;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:hover::placeholder {
   color: gray;
   padding-left: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content input:focus {
   outline: none;
@@ -175,9 +204,13 @@
 }
 .main-form form .from-content .forget-password a {
   color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content .forget-password a:hover {
   color: rgb(88, 88, 255);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content .btn-login button {
   height: 35px;
@@ -185,10 +218,14 @@
   border-radius: 25px;
   border: none;
   font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content .btn-login button:hover {
   background-color: #da6014;
   color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .main-form form .from-content .register {
   text-align: center;

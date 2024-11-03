@@ -5,8 +5,9 @@
 * p {
   font-family: "Calibri", sans-serif;
 }
-* h1 {
+* h1:not(nav h1) {
   font-family: "Calibri", sans-serif;
+  font-weight: 500;
 }
 * h3 {
   font-family: "Calibri", sans-serif;
@@ -16,6 +17,7 @@
   height: 100vh;
   background: url(../../image/about/athletes-1867185_1280.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .about-more {
@@ -947,6 +949,7 @@ nav .nav-button .nav-button-left img {
   cursor: pointer;
 }
 nav .nav-button .nav-button-left h1 {
+  font-family: serif;
   color: white;
   font-size: 1.875rem;
   font-weight: 100;
@@ -1658,5 +1661,22 @@ nav .nav-button .nav-button-right ul li button:focus {
   }
   .list-sport .list-sport-card .card1 h1, .list-sport .list-sport-card .card2 h1, .list-sport .list-sport-card .box h1 {
     font-size: 0.75rem;
+  }
+}
+@media (max-width: 420px) {
+  .list-sport {
+    padding: 10px;
+  }
+  .list-sport h1:not(.box h1) {
+    font-size: 1.625rem;
+  }
+  .list-sport .list-sport-card {
+    gap: 10px;
+  }
+  .list-sport .list-sport-card .card1, .list-sport .list-sport-card .card2, .list-sport .list-sport-card .box {
+    padding: 5px;
+  }
+  .list-sport .list-sport-card .card1 h1, .list-sport .list-sport-card .card2 h1, .list-sport .list-sport-card .box h1 {
+    font-size: 0.6rem;
   }
 }

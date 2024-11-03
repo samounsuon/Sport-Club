@@ -4,8 +4,9 @@
   p{
     font-family:"Calibri", sans-serif;
   }
-  h1{
+  h1:not(nav h1 ){
     font-family:"Calibri", sans-serif;
+    font-weight: 500;
   }
   h3{
     font-family:"Calibri", sans-serif;
@@ -19,7 +20,6 @@
 @import "../scss/components/mixin";
 @import "./components/main-about";
 @import "./components/footer-about";
-// @import""
 @import "../scss/components/variable";
 @import "../scss/components/mixin";
 @import "../scss/components/navbar";
